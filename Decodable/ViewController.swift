@@ -38,7 +38,7 @@ class Baby: Decodable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(String.self, forKey: .name)
         age = try values.decode(Int.self, forKey: .age)
-        
+
         if let description = try values.decode(String?.self, forKey: .description) {
             self.description = description
         } else {
@@ -59,6 +59,7 @@ class NetworkingService {
             return baby
         }
         catch {
+            print(error)
             return nil
         }
     }
