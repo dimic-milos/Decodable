@@ -11,8 +11,8 @@
 		74014DCA216502E200E657AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74014DC9216502E200E657AF /* ViewController.swift */; };
 		74014DCD216502E200E657AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74014DCB216502E200E657AF /* Main.storyboard */; };
 		74014DCF216502E500E657AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74014DCE216502E500E657AF /* Assets.xcassets */; };
-		74014DD2216502E500E657AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74014DD0216502E500E657AF /* LaunchScreen.storyboard */; };
 		74014DDD216502E500E657AF /* DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74014DDC216502E500E657AF /* DecodableTests.swift */; };
+		74014DE821650D2600E657AF /* BabyJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74014DE721650D2600E657AF /* BabyJson.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +31,11 @@
 		74014DC9216502E200E657AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74014DCC216502E200E657AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74014DCE216502E500E657AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74014DD1216502E500E657AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74014DD3216502E500E657AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74014DD8216502E500E657AF /* DecodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74014DDC216502E500E657AF /* DecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableTests.swift; sourceTree = "<group>"; };
 		74014DDE216502E500E657AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74014DE721650D2600E657AF /* BabyJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BabyJson.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 			children = (
 				74014DC7216502E200E657AF /* AppDelegate.swift */,
 				74014DC9216502E200E657AF /* ViewController.swift */,
+				74014DE721650D2600E657AF /* BabyJson.txt */,
 				74014DCB216502E200E657AF /* Main.storyboard */,
 				74014DCE216502E500E657AF /* Assets.xcassets */,
-				74014DD0216502E500E657AF /* LaunchScreen.storyboard */,
 				74014DD3216502E500E657AF /* Info.plist */,
 			);
 			path = Decodable;
@@ -177,8 +177,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74014DD2216502E500E657AF /* LaunchScreen.storyboard in Resources */,
 				74014DCF216502E500E657AF /* Assets.xcassets in Resources */,
+				74014DE821650D2600E657AF /* BabyJson.txt in Resources */,
 				74014DCD216502E200E657AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,14 +227,6 @@
 				74014DCC216502E200E657AF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		74014DD0216502E500E657AF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74014DD1216502E500E657AF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
