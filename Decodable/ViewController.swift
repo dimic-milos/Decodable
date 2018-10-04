@@ -14,54 +14,34 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let baby = NetworkingService().getBaby()
-        
+        print("\n baby object has been initialized: \(baby != nil)")
         print(baby?.name as Any)
         print(baby?.age as Any)
         print(baby?.description as Any)
-    }
-}
-
-class Baby: Decodable {
-    
-    var name: String
-    var age: Int
-    var description: String = "Default description"
-    
-    enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case age = "age"
-        case description = "description"
-    }
-    
-   required init(from decoder: Decoder) throws {
+        print("END \n")
         
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        name = try values.decode(String.self, forKey: .name)
-        age = try values.decode(Int.self, forKey: .age)
-
-        if let description = try values.decode(String?.self, forKey: .description) {
-            self.description = description
-        } else {
-            self.description = "No description parsed"
-        }
-    }
-}
-
-class NetworkingService {
-    
-    func getBaby() -> Baby? {
-        let filePath = Bundle(for: type(of: self)).path(forResource: "BabyJson", ofType: "txt")!
-        let jsonString = try! String(contentsOfFile: filePath, encoding: .utf8)
-        let data = Data(jsonString.utf8)
+        let babyWithAgeZero = NetworkingService().getBabyWithAgeZero()
+        print("\n babyWithAgeZero object has been initialized: \(babyWithAgeZero != nil)")
+        print(babyWithAgeZero?.name as Any)
+        print(babyWithAgeZero?.age as Any)
+        print(babyWithAgeZero?.description as Any)
+        print("END \n")
         
-        do {
-            let baby = try JSONDecoder().decode(Baby.self, from: data)
-            return baby
-        }
-        catch {
-            print(error)
-            return nil
-        }
+        let babyWithNoDescription = NetworkingService().getBabyWithNoDescription()
+        print("\n babyWithNoDescription object has been initialized: \(babyWithNoDescription != nil)")
+        print(babyWithNoDescription?.name as Any)
+        print(babyWithNoDescription?.age as Any)
+        print(babyWithNoDescription?.description as Any)
+        print("END \n")
+        
+        let babyJsonWithNoNameKey = NetworkingService().getBabyJsonWithNoNameKey()
+        print("\n babyJsonWithNoNameKey object has been initialized: \(babyJsonWithNoNameKey != nil)")
+        print(babyJsonWithNoNameKey?.name as Any)
+        print(babyJsonWithNoNameKey?.age as Any)
+        print(babyJsonWithNoNameKey?.description as Any)
+        print("END \n")
     }
 }
+
+
 

@@ -13,6 +13,11 @@
 		74014DCF216502E500E657AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74014DCE216502E500E657AF /* Assets.xcassets */; };
 		74014DDD216502E500E657AF /* DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74014DDC216502E500E657AF /* DecodableTests.swift */; };
 		74014DE821650D2600E657AF /* BabyJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74014DE721650D2600E657AF /* BabyJson.txt */; };
+		74014DEA2166435C00E657AF /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74014DE92166435C00E657AF /* NetworkingService.swift */; };
+		74014DEC2166686200E657AF /* Baby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74014DEB2166686200E657AF /* Baby.swift */; };
+		74014DEE216668AB00E657AF /* BabyJsonWithAgeZero.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74014DED216668AB00E657AF /* BabyJsonWithAgeZero.txt */; };
+		74014DF021666A1B00E657AF /* BabyJsonWithNoDescription.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74014DEF21666A1B00E657AF /* BabyJsonWithNoDescription.txt */; };
+		74014DF221666B5B00E657AF /* BabyJsonWithNoNameKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74014DF121666B5B00E657AF /* BabyJsonWithNoNameKey.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		74014DDC216502E500E657AF /* DecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableTests.swift; sourceTree = "<group>"; };
 		74014DDE216502E500E657AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74014DE721650D2600E657AF /* BabyJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BabyJson.txt; sourceTree = "<group>"; };
+		74014DE92166435C00E657AF /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		74014DEB2166686200E657AF /* Baby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby.swift; sourceTree = "<group>"; };
+		74014DED216668AB00E657AF /* BabyJsonWithAgeZero.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BabyJsonWithAgeZero.txt; sourceTree = "<group>"; };
+		74014DEF21666A1B00E657AF /* BabyJsonWithNoDescription.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BabyJsonWithNoDescription.txt; sourceTree = "<group>"; };
+		74014DF121666B5B00E657AF /* BabyJsonWithNoNameKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BabyJsonWithNoNameKey.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +89,12 @@
 			children = (
 				74014DC7216502E200E657AF /* AppDelegate.swift */,
 				74014DC9216502E200E657AF /* ViewController.swift */,
+				74014DEB2166686200E657AF /* Baby.swift */,
+				74014DE92166435C00E657AF /* NetworkingService.swift */,
 				74014DE721650D2600E657AF /* BabyJson.txt */,
+				74014DED216668AB00E657AF /* BabyJsonWithAgeZero.txt */,
+				74014DEF21666A1B00E657AF /* BabyJsonWithNoDescription.txt */,
+				74014DF121666B5B00E657AF /* BabyJsonWithNoNameKey.txt */,
 				74014DCB216502E200E657AF /* Main.storyboard */,
 				74014DCE216502E500E657AF /* Assets.xcassets */,
 				74014DD3216502E500E657AF /* Info.plist */,
@@ -177,8 +192,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74014DF221666B5B00E657AF /* BabyJsonWithNoNameKey.txt in Resources */,
+				74014DF021666A1B00E657AF /* BabyJsonWithNoDescription.txt in Resources */,
 				74014DCF216502E500E657AF /* Assets.xcassets in Resources */,
 				74014DE821650D2600E657AF /* BabyJson.txt in Resources */,
+				74014DEE216668AB00E657AF /* BabyJsonWithAgeZero.txt in Resources */,
 				74014DCD216502E200E657AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,8 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74014DEA2166435C00E657AF /* NetworkingService.swift in Sources */,
 				74014DCA216502E200E657AF /* ViewController.swift in Sources */,
 				74014DC8216502E200E657AF /* AppDelegate.swift in Sources */,
+				74014DEC2166686200E657AF /* Baby.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
