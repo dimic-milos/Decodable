@@ -1,5 +1,6 @@
 {
 "name": "Jovan",
-"age": 3,
-"description" : "htec boy"
+"age": "3",
+"description" : "parsed description",
+"saint_day" : "Vidovdan"
 }

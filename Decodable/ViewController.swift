@@ -14,32 +14,36 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let baby = NetworkingService().getBaby()
-        print("\n baby object has been initialized: \(baby != nil)")
+        print("START \n baby object has been initialized: \(baby != nil)")
         print(baby?.name as Any)
         print(baby?.age as Any)
         print(baby?.description as Any)
-        print("END \n")
+        print(baby?.saintDay as Any)
+        print("END_____________________ \n")
         
         let babyWithAgeZero = NetworkingService().getBabyWithAgeZero()
-        print("\n babyWithAgeZero object has been initialized: \(babyWithAgeZero != nil)")
+        print("START \n babyWithAgeZero object has been initialized: \(babyWithAgeZero != nil)")
         print(babyWithAgeZero?.name as Any)
         print(babyWithAgeZero?.age as Any)
         print(babyWithAgeZero?.description as Any)
-        print("END \n")
-        
-        let babyWithNoDescription = NetworkingService().getBabyWithNoDescription()
-        print("\n babyWithNoDescription object has been initialized: \(babyWithNoDescription != nil)")
-        print(babyWithNoDescription?.name as Any)
-        print(babyWithNoDescription?.age as Any)
-        print(babyWithNoDescription?.description as Any)
-        print("END \n")
-        
+        print(babyWithAgeZero?.saintDay as Any)
+        print("END_____________________ \n")
+
+        let babyWithNoDescriptionKey = NetworkingService().getBabyWithNoDescriptionKey()
+        print("START \n babyWithNoDescription object has been initialized: \(babyWithNoDescriptionKey != nil)")
+        print(babyWithNoDescriptionKey?.name as Any)
+        print(babyWithNoDescriptionKey?.age as Any)
+        print(babyWithNoDescriptionKey?.description as Any)
+        print(babyWithNoDescriptionKey?.saintDay as Any)
+        print("END_____________________ \n")
+
         let babyJsonWithNoNameKey = NetworkingService().getBabyJsonWithNoNameKey()
-        print("\n babyJsonWithNoNameKey object has been initialized: \(babyJsonWithNoNameKey != nil)")
+        print("START \n babyJsonWithNoNameKey object has been initialized: \(babyJsonWithNoNameKey != nil)")
         print(babyJsonWithNoNameKey?.name as Any)
         print(babyJsonWithNoNameKey?.age as Any)
         print(babyJsonWithNoNameKey?.description as Any)
-        print("END \n")
+        print(babyJsonWithNoNameKey?.saintDay as Any)
+        print("END_____________________ \n")
     }
 }
 

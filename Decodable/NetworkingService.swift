@@ -10,6 +10,10 @@ import Foundation
 
 class NetworkingService {
     
+    init() {
+        print(" \n NetworkingService INIT")
+    }
+    
     func getBaby() -> Baby? {
         let filePath = Bundle(for: type(of: self)).path(forResource: "BabyJson", ofType: "txt")!
         let jsonString = try! String(contentsOfFile: filePath, encoding: .utf8)
@@ -40,8 +44,8 @@ class NetworkingService {
         }
     }
     
-    func getBabyWithNoDescription() -> Baby? {
-        let filePath = Bundle(for: type(of: self)).path(forResource: "BabyJsonWithNoDescription", ofType: "txt")!
+    func getBabyWithNoDescriptionKey() -> Baby? {
+        let filePath = Bundle(for: type(of: self)).path(forResource: "BabyJsonWithNoDescriptionKey", ofType: "txt")!
         let jsonString = try! String(contentsOfFile: filePath, encoding: .utf8)
         let data = Data(jsonString.utf8)
         
